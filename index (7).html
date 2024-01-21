@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&family=Source+Code+Pro:ital,wght@0,200;0,500;1,400&family=Tajawal&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color:rgb(219, 217, 217);
+    /* width: 434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 120vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 32px;
+    padding: 33px 0;
+}
+.sidebar nav li a{
+   text-decoration: none;
+   color: black;
+}
+
+.main{
+    /* background-color:skyblue; */
+    width: 85vw;
+}
+.container{
+    display:flex;
+
+}
+.infoContainer{
+    /* background-color: yellowgreen; */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.mypic img{
+    height: 58vh;
+}
+.myinfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    font-family: 'Tajawal', sans-serif;
+}
+.hello{
+    font-size: 3em;
+    
+}
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+.moreabout{
+    font-size: 2em;
+    margin-top: 23px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.about
+{
+    font-size: 2.5em;
+}
+.buttons{
+    margin: 2.2em;
+    font-size: 10px;
+}
+
+.btn{
+    padding:9px 14px ;
+    border-radius:22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin:3px 3px;
+    cursor: pointer;
+
+}
+.btn-sm{
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+
+}
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.contactform{
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0 34px;
+    /* padding-top: 144px; */
+    margin:88px;
+    
+}
+.contactform h1{
+    font-family: 'Tajawal', sans-serif;
+    /* text-align: center; */
+    /* padding: 12px 0;; */
+
+
+}
+.contactform form div{
+    padding:10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin:6px 0;
+    padding: 3px;
+
+}
+.contactform form{
+    margin:0 40px;
+
+}
+#emailHelp{
+    font-size: 11px;
+    color:midnightblue;
+    margin:0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check {
+    flex-direction: row;
+
+}
+#form-check input {
+    width: 25px;
+    margin: 3px 0;
+
+}
+.blogitems {margin: 20px;
+    font-family: 'Tajawal', sans-serif; 
+
+}
+.blogContainer{
+    margin:88px;
+}
+ h1{
+
+
+    font-family: 'Tajawal', sans-serif;
+    margin: 23px;
+
+
+}
+ p{
+    font-family: 'Fira Sans', sans-serif;
+
+
+}
+
+
+.education li{
+    list-style: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+.intro{
+    margin:88px;
+}
+
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+    
+}
+.intro p{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+
+}
+.SkillsContainer{
+    padding: 12px;
+
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: green;
+    border: 2px solid black;
+
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+}
+.hunered{
+    width: 265px;
+}
+.seventyfive{
+    width: 198px;
+    background-color: yellowgreen;
+}
+.fifty{
+    width: 132px;
+    background-color: yellow;
+}
+.sidebargo{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+.hamburger{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+
+}
+.ham{
+    margin-top: 10px;
+    margin-left:10px;
+}
+.cross{
+    margin-left:180px;
+    margin-top: 10px;
+
+}
+
+@media(max-width:746px){
+    *{
+        /* background-color: rgb(236, 123, 123); */
+    }
+    .buttons{
+       
+        font-size: 6px;
+    }
+    .myinfo{
+        font-size: 10px;
+    }
+    .mypic{
+        display: none;
+    }
+    .intro, .blogContainer,.contactform{
+        margin:50px 8px;
+    }
+
+}
+.pdetails li{
+    list-style: none;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+#ch{
+    display: none;
+}
+#ch:checked ~ .content{
+    display: block;
+
+}
+#ch:checked ~ label{
+    display: none;
+
+}
+    
+.content{
+    display: none;
+}
+.content li{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+.introduction label{
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    background-color: deepskyblue;
+    padding: 3px 13px;
+    border-radius:10px;
+    margin-top: 12px;
+}
